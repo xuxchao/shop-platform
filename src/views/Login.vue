@@ -32,12 +32,11 @@ export default {
     emit () {
       this.$refs.ruleForm.validate(vaild => {
         if (vaild) {
-          let json = {
+          let obj = {
             UserName: this.ruleForm.UserName,
             Pwd: this.ruleForm.Pwd
           }
-          console.log('json', json)
-
+          console.log(obj)
           this.$router.push('/user')
         }
       })
